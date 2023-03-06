@@ -1,0 +1,103 @@
+.parallax-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .parallax-section.first {
+    background: url('1.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+  .parallax-section.second {
+    background: url('2.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+  .parallax-section.third {
+    background: url('3.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+  .parallax-section.fourth {
+    background: url('4.jpg') no-repeat center;
+    background-size: cover;
+  }
+  
+  .parallax-section h1, .parallax-section h2, .parallax-section p, .parallax-section ul, .parallax-section form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-align: center;
+  }
+  
+  .parallax-section h1 {
+    font-size: 4em;
+  }
+  
+  .parallax-section h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  
+  .parallax-section p {
+    font-size: 1.5em;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+    
+/* Parallax effect */ 
+.parallax-section.first {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-section.second {
+    background-attachment: fixed;
+    background-position: center;
+    }
+
+.parallax-section.third {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-section.fourth {
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.parallax-section.second:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.parallax-section.third:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.parallax-section.fourth:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
